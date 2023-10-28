@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img id="myImage" src="https://www.ppt-backgrounds.net/thumbs/computers-breath-taking-natures-download-background-backgrounds.jpg" onmouseover="changeImage()" onmouseout="restoreImage()">
+<!-- changes the image when hovered -->
+<script>
+    function changeImage() {
+        var img = document.getElementById("myImage");
+        img.src = "https://www.ppt-backgrounds.net/thumbs/computers-breath-taking-natures-download-background-backgrounds.jpg";
+    }
+
+    function restoreImage() {
+        var img = document.getElementById("myImage");
+        img.src = "https://i.pinimg.com/originals/1a/69/31/1a693166d369aaff44d34f6f58524a69.jpg";
+    }
+</script>
+
+</body>
+</html>

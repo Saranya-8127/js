@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+        }
+      #whole{
+        /* text-align: center; */
+        background-color: white;
+        padding: 4%;
+        margin: 5% 10% 5% 10%
+      }  
+      .heading{
+        color: white;
+        text-align: center;
+        padding-top: 3%;
+      }
+
+    </style>
+</head>
+<body>
+    <h1 class="heading">Train station</h1>
+    <div id="whole">
+        <p>Exercise: the array contains a bunch of strings containing information about
+        train stations in the North of England. The strings are data items that contain
+         the three-letter station code, followed by some machine-readable data, followed
+          by a semicolon, followed by the human-readable station name. For example: 
+           MAN675847583748sjt567654;Manchester Piccadilly
+       
+           We want to extract the station code and name, and put them together in a string
+            with the following structure: 
+                       MAN: Manchester Piccadilly
+           What to Do?
+           We'd recommend doing it like this:
+       
+           Extract the three-letter station code and store it in a new variable.
+           Find the character index number of the semicolon.
+           Extract the human-readable station name using the semicolon character index number
+            as a reference point, and store it in a new variable.
+           Concatenate the two new variables and a string literal to make the final string.
+           Change the value of the result variable to the final string, not the station.</p>
+           <h1>Train Station Information</h1>
+           <h2>trains are...</h2>
+           <ul>
+            <li>MAN675847583748sjt567654;Manchester Piccadilly</li>
+            <li>LDS1234567890abc12345;Leeds Central</li>
+            <li>NCL987654321xyz54321;Newcastle</li>
+            <li>SHF456789012def67890;Sheffield</li>
+            <li>BHM567890123ghi56789;Birmingham New Street</li>
+           </ul>
+           <select id="inputSelect">
+               <option value="MAN675847583748sjt567654;Manchester Piccadilly">train 1</option>
+               <option value="LDS1234567890abc12345;Leeds Central">train 2</option>
+               <option value="NCL987654321xyz54321;Newcastle">train 3</option>
+               <option value="SHF456789012def67890;Sheffield">train 4</option>
+               <option value="BHM567890123ghi56789;Birmingham New Street">train 5</option>
+           </select>
+           <button id="processButton">Process</button>
+           <div id="output"></div>
+           </div>
+           <script src="/TrainCode.js"></script>
+</body>
+</html>

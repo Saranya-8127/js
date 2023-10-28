@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="result" readonly>
+<button onclick="clearResult()">C</button>
+<button onclick="appendToResult('7')">7</button>
+<button onclick="appendToResult('8')">8</button>
+<button onclick="appendToResult('+')">+</button>
+<button onclick="calculateResult()">=</button>
+<!-- an interactive calculator -->
+<script>
+    function clearResult() {
+        document.getElementById("result").value = "";
+    }
+
+    function appendToResult(value) {
+        document.getElementById("result").value += value;
+    }
+
+    function calculateResult() {
+        var resultElement = document.getElementById("result");
+        try {
+            resultElement.value = eval(resultElement.value);
+        } catch (error) {
+            resultElement.value = "Error";
+        }
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Operators</title>
+</head>
+<body>
+    <h1>JavaScript Operators Example</h1>
+    <p> num 1 = 10 and num 2 = 5</p>
+    <script>
+        // Arithmetic Operators
+        var num1 = 10;
+        var num2 = 5;
+        var addition = num1 + num2;
+        var subtraction = num1 - num2;
+        var multiplication = num1 * num2;
+        var division = num1 / num2;
+
+        document.write("<h2>Arithmetic Operators:</h2>");
+        document.write("num1 + num2 = " + addition + "<br>");
+        document.write("num1 - num2 = " + subtraction + "<br>");
+        document.write("num1 * num2 = " + multiplication + "<br>");
+        document.write("num1 / num2 = " + division + "<br>");
+
+        // Comparison Operators
+        var isEqual = (num1 == num2);
+        var isNotEqual = (num1 != num2);
+        var isGreater = (num1 > num2);
+        var isLess = (num1 < num2);
+
+        document.write("<h2>Comparison Operators:</h2>");
+        document.write("num1 == num2: " + isEqual + "<br>");
+        document.write("num1 != num2: " + isNotEqual + "<br>");
+        document.write("num1 > num2: " + isGreater + "<br>");
+        document.write("num1 < num2: " + isLess + "<br>");
+
+        // Logical Operators
+        var bool1 = true;
+        var bool2 = false;
+
+        var andResult = bool1 && bool2;
+        var orResult = bool1 || bool2;
+        var notResult = !bool1;
+
+        document.write("<h2>Logical Operators:</h2>");
+        document.write("bool1 && bool2: " + andResult + "<br>");
+        document.write("bool1 || bool2: " + orResult + "<br>");
+        document.write("!bool1: " + notResult + "<br>");
+    </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Button Click Example</title>
+</head>
+<body>
+
+<button id="myButton">Click Me</button>
+
+<script>
+    // Get a reference to the button element by its ID
+    var button = document.getElementById("myButton");
+
+    // Add a click event listener to the button
+    button.addEventListener("click", function() {
+        // When the button is clicked, print "Hello" to the console
+        console.log("Hello");
+    });
+</script>
+
+<button id="printOnPageButton">Click Me to Print on Page</button>
+
+<script>
+       // Get a reference to the "Click Me to Print on Page" button by its ID
+    var pageButton = document.getElementById("printOnPageButton");
+
+    // Add a click event listener to the page button
+    pageButton.addEventListener("click", function() {
+        // When the button is clicked, print "Hello" on the webpage
+        var messageElement = document.createElement("p");
+        messageElement.textContent = "Hello";
+        document.body.appendChild(messageElement);
+    });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+    <body>
+        <h2 id="ct"></h2>
+        <h2 id="mt"></h2>
+        
+    <script>
+        
+        // array
+
+        const cats = ["Leopard", "Serval", "Jaguar", "Tiger", "Caracal", "Lion"];
+
+        // by using collection
+        for (const cat of cats) {
+            document.getElementById("ct").innerHTML+=cat+"<br> ";
+                     //console.log(cat);
+        }   
+
+        // by using index
+        for(let i=0; i <cats.length; i++){
+            document.getElementById("mt").innerHTML+=cats[i]+" ";
+        }
+
+        const numbers =[10,5,30,40];
+
+       </script>
+</body>
+</html>

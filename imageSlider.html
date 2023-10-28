@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img id="slider" src="https://i.pinimg.com/originals/1a/69/31/1a693166d369aaff44d34f6f58524a69.jpg">
+<button onclick="nextImage()">Next</button>
+<!-- slider with functio to increase the index of the image and a variable to slide different images -->
+<script>
+    var images = ["https://i.pinimg.com/originals/1a/69/31/1a693166d369aaff44d34f6f58524a69.jpg", "https://www.ppt-backgrounds.net/thumbs/computers-breath-taking-natures-download-background-backgrounds.jpg", "https://tse2.mm.bing.net/th/id/OIP.rvSWtRd_oPRTwDoTCmkP5gHaE8?pid=ImgDet&rs=1"];
+    var currentIndex = 0;
+    var slider = document.getElementById("slider");
+
+    function nextImage() {
+        currentIndex = (currentIndex + 1) % images.length;
+        slider.src = images[currentIndex];
+    }
+</script>
+
+</body>
+</html>

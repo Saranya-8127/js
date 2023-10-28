@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+   <meta charset="UTF-8">
+
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <title>Document</title>
+
+ 
+
+</head>
+
+<body>
+
+<!-- styling the p & h1 elements -->
+
+        <p id="demo" style="background-color: rgb(0, 255, 200); text-align: center;"></p>
+
+        <h1 id="demo1" style="background-color: rgba(127, 255, 212, 0.669); text-align: center;"></h1>
+
+        <p id="demo2"></p>
+
+        <div id="details" ></div>
+
+        <div id="examp"></div>
+
+        <div id="eg"></div>
+
+        <div id="work"></div>
+
+        <button type="button" onclick="myprofile()"><b> Profile Details</b></button>
+
+        <p id="arrays" style="padding:40; font-size: larger;background-color:wheat; text-align: center;  "></p>
+
+        <p id="array" style="padding:40; font-size: larger; background-color: wheat; text-align: center;"></p>
+
+        <p id="strings" style="padding:40; font-size: larger; background-color:wheat; text-align: center;"></p>
+
+        <p id="demo3" stle="font-size: medium"></p>
+
+        <p id="demo4" style="font-size: medium;"></p>
+
+<script>
+
+//varibales in js
+
+        var names = "<h1>MANASWINI MAMILLPALLI</h1>";
+
+        var role = "Associate Software Engineer";
+
+        var edu = "  Details";
+
+        document.getElementById("demo").innerHTML = names;
+
+        document.getElementById("demo1").innerHTML = role;
+
+// varibales js
+
+        var blood ="<h3>  Blood group:O+ </h3>";
+
+        var contact ="<b>Mobile</b>:1234567";
+
+        document.getElementById("demo3").innerHTML = blood;
+
+        document.getElementById("demo4").innerHTML = contact;
+
+//creating an object
+
+        const example = {type:"E-MAIL",  color:"white"};
+
+        document.getElementById("details").innerHTML = "manaswinimamillapalli99@gmail.com : " + example.type ;
+
+        const exam = {type:"INTERNSHIP",  color:"white"};
+
+        document.getElementById("examp").innerHTML = "AWS  internship By Solvency: " + exam.type ;
+
+        const exa = {type:"MAJOR PROJECT",  color:"white"};
+
+        document.getElementById("eg").innerHTML = "Warm product recommendations in E-Commerce: " + exa.type
+
+//Assiging an object
+
+        const manu = {type:"Linkdin id",  color:"white"};
+
+        document.getElementById("demo2").innerHTML = "Manaswini Mamillapalli :"  + manu.type;
+
+//arrays
+
+       const percentage=["90","80","70%","60"];
+
+      document.getElementById("arrays").innerHTML="Btech aggeregate"+ percentage[2];
+
+//array
+
+      const training=["java","python","dotnet","c++"];
+
+      document.getElementById("array").innerHTML="currently training on "+training[2];
+
+//function
+
+      function myprofile() {
+
+        document.getElementById("work").innerHTML = "<p>employee id:103313<br>Skills: HTML,CSS<br>Branch: vizag</p> ";
+
+      }
+
+// Creating Strings
+
+      var string1="company";
+
+      document.getElementById("strings").innerHTML=" working in infinite "+string1;
+
+</script>
+
+</body>
+
+</html>

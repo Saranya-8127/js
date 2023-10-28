@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .highlight {
+            background-color: yellow;
+        }
+    </style>
+    <p>This is a paragraph.</p>
+    <button onclick="highlightText()">Highlight Text</button>
+    <!-- to manipulate the css of the text -->
+    <script>
+        function highlightText() {
+            var paragraph = document.querySelector("p");
+            paragraph.classList.toggle("highlight");
+        }
+    </script>
+    
+</body>
+</html>

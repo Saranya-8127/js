@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>conditional Exercises</title>
+</head>
+<body>
+    <section class="form bg-info color-primary">
+        <label for="weather">choose a weather</label>
+        <select class="form-select form-select-lgmb-3 bg-success">
+            <option value="">select</option>
+            <option value="Sunny">Sunny</option>
+            <option value="Rainy">Rainy</option>
+            <option value="Windy">Windy</option>
+            <option value="Cloudy">Cloudy</option>
+            <option value="Snowing">Snowing</option>
+            <option value="Cool">Cool</option>
+        </select>
+        <p>i want to eat fries today</p>
+    </section>
+    
+    <script>
+        const select=document.querySelector("select");
+        const para=document.querySelector("p");
+        select.addEventListener("change", setweather);
+
+        function setweather(){
+            const choice=select.value;
+            
+            if(choice==="Sunny"){
+                para.textContent="you can have a fruit punch garnished with ice chips today"
+            }else if (choice==="Rainy"){
+                para.textContent="you can have hot served dishes like samosa or paprika today"
+            } else if(choice==="Windy"){
+                para.textContent="you should eat indoor food to sooth you like sushi or momos"
+            } else if(choice==="Cloudy"){
+                para.textContent="enjoy bright foods like soup with bread"
+            } else if(choice==="Snowing"){
+                para.textContent="have hot chocolate with bread"
+            } else if(choice==="Cool"){
+                para.textContent="how about hotly served noodles with manchurian "
+            } else{
+                para.textContent="you can never go wrong with a pizza, french fries and pepsi"
+            }
+        }
+    </script>
+</body>
+</html>

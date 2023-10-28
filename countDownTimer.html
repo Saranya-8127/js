@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="timer">10</p>
+    <button onclick="startTimer()">Start Timer</button>
+    <!-- a timer from 10 seconds with timerelement. when timer is less than 0, this will trigger an modal alert -->
+    <script>
+        var seconds = 10;
+        var timer;
+    
+        function startTimer() {
+            timer = setInterval(function() {
+                var timerElement = document.getElementById("timer");
+                timerElement.textContent = seconds;
+                seconds--;
+    
+                if (seconds < 0) {
+                    clearInterval(timer);
+                    alert("Time's up!");
+                }
+            }, 10);
+        }
+    </script>
+     
+</body>
+</html>

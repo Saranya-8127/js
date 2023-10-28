@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form onsubmit="return validateForm()">
+        <input type="text" id="name" placeholder="Enter your name" required>
+        <button type="submit">Submit</button>
+    </form>
+    <!-- filling a form -->
+    <script>
+        function validateForm() {
+            var name = document.getElementById("name").value;
+            // we use three to check value and type equality
+            if (name === "") {
+                alert("Name must be filled out");
+                return false;
+            }
+            return true;
+            
+        }
+    </script>
+</body>
+</html>

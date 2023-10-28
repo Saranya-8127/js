@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="myList"></ul>
+<button onclick="addItem()">Add Item</button>
+<!-- when button is clicked, a new element is added to the list with li tag -->
+<script>
+    function addItem() {
+        var list = document.getElementById("myList");
+        var newItem = document.createElement("li");
+        newItem.textContent = "New Item";
+        list.appendChild(newItem);
+    }
+</script>
+
+</body>
+</html>

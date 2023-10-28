@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle Visibility Example</title>
+</head>
+<body>
+    <p id="myElement">This element can be hidden or shown.</p>
+    <button onclick="toggleVisibility()">Toggle Visibility</button>
+    
+    <script>
+        // Function to toggle the visibility of the "myElement" element
+        function toggleVisibility() {
+            var element = document.getElementById("myElement");
+
+            // Check the current display style and toggle it
+            if (element.style.display === "none") {
+                element.style.display = "block"; // Show the element
+            } else {
+                element.style.display = "none";  // Hide the element
+            }
+        }
+    </script>
+</body>
+</html>
